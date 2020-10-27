@@ -21,6 +21,7 @@ def get_user_input
 end
 
 def end_game(sum)
+<<<<<<< HEAD
 puts  "Sorry, you hit #{sum}. Thanks for playing!"
 end
 
@@ -28,8 +29,21 @@ def initial_round
   sum= deal_card + deal_card
   display_card_total(sum)
   sum
+=======
+p  "Sorry, you hit #{sum}. Thanks for playing!"
 end
 
+def initial_round(sum)
+  count=0
+deal_card.each do |number|
+if count<=2 
+  number
+>>>>>>> d7256db4a3fd149517548842d36311b5d3e2d82b
+end
+count+=1
+sum= number + number
+
+<<<<<<< HEAD
 def hit?(current_card_total)
 prompt_user
 response1 = get_user_input
@@ -44,6 +58,13 @@ else
   
 end
   
+=======
+end
+end
+display_card_total
+def hit?
+  # code hit? here
+>>>>>>> d7256db4a3fd149517548842d36311b5d3e2d82b
 end
 
 def invalid_command
